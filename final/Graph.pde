@@ -64,12 +64,12 @@ class Graph {
     PathfindingList visited = new PathfindingList();
     
     // create our table
-    ArrayList<AStarRow> astarTable = new ArrayList<AStarRow>();
+    ArrayList<AStar_Row> astarTable = new ArrayList<AStar_Row>();
     
     // setup our Dijkstra table
     for (Node node : nodes) {
       float h = PVector.dist(node.position, end.position);
-      AStarRow row = new AStarRow(node, null, 9999, h, 9999);
+      AStar_Row row = new AStar_Row(node, null, 9999, h, 9999);
       astarTable.add(row);
     }
     
@@ -96,7 +96,7 @@ class Graph {
         float gcost = e.cost + astarTable.get(current.id).g;
         
         // get the edge row
-        AStarRow edgeRow = astarTable.get(e.endNode.id);
+        AStar_Row edgeRow = astarTable.get(e.endNode.id);
         
         if (edgeRow.g > gcost) {
           edgeRow.best = e;

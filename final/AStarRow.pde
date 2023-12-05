@@ -1,4 +1,4 @@
-class AStarRow {
+class AStar_Row {
   
   Edge best;
   Node to;
@@ -7,7 +7,7 @@ class AStarRow {
   float h;
   float f;
   
-  AStarRow(Node t, Edge b, float gN, float hN, float fN) {
+  AStar_Row(Node t, Edge b, float gN, float hN, float fN) {
     to = t;
     best = b;
     

@@ -6,7 +6,7 @@ class PathfindingList extends ArrayList<Node> {
 
 
   
-  Node getLowestFNode(ArrayList<AStarRow> astarTable) {
+  Node getLowestFNode(ArrayList<AStar_Row> astarTable) {
     Node lowestFNode = this.get(0);
     float lowestF = 9999;
     
