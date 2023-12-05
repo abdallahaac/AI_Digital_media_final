@@ -1,9 +1,9 @@
 class InRangeToMouse extends Condition {
 
-  Guard guard;
+  Chaser guard;
   float radius;
   
-  InRangeToMouse(Guard g, float r) {
+  InRangeToMouse(Chaser g, float r) {
     
     super();
     
@@ -13,7 +13,7 @@ class InRangeToMouse extends Condition {
   }
   
   Status run() {
-    float d = PVector.dist(guard.location, new PVector(mouseX, mouseY));
+    float d = PVector.dist(chaser.location, new PVector(mouseX, mouseY));
     super.condition = d < radius;
     return super.run();
   }

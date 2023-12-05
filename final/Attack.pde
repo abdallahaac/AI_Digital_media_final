@@ -1,21 +1,21 @@
-class Attack extends BTNode {
+//class Attack extends BTNode {
 
-  Guard guard;
+//  Guard guard;
   
-  Attack(Guard g) {
-    guard = g;
-  }
+//  Attack(Guard g) {
+//    guard = g;
+//  }
   
-  Status run() {
+//  Status run() {
    
-    PVector arrive = guard.arrive(new PVector(mouseX, mouseY), 25);
-    guard.applyForce(arrive);
-    guard.fillcolor = color(255,0,0);
-    fill(255,200,200);
-    ellipse(guard.location.x, guard.location.y, 50, 50);
-    return Status.Success;
+//    PVector arrive = guard.arrive(new PVector(mouseX, mouseY), 25);
+//    guard.applyForce(arrive);
+//    guard.fillcolor = color(255,0,0);
+//    fill(255,200,200);
+//    ellipse(guard.location.x, guard.location.y, 50, 50);
+//    return Status.Success;
     
     
-  }
+//  }
 
-}
+//}
